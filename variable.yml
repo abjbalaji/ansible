@@ -9,7 +9,7 @@
 
 - name: playlevel variable from a file
   hosts: all
-  vars_file:
+  vars_files:
     - var-sample.yml
   tasks:
     - name: print the url
