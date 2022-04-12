@@ -21,7 +21,7 @@
 #    # mv frontend-main/* .
 #    # mv static/* .
 #    # rm -rf frontend-main README.md
-#    # mv localhost.conf /etc/nginx/default.d/roboshop.config
+#    # mv localhost.conf /etc/nginx/default.d/roboshop.conf
 #
 #    ```
 #
@@ -60,8 +60,8 @@
 
 - name: Copyig Roboshop Configuration Files
   ansible.builtin.copy:
-    src: roboshop.config
-    dest: /etc/nginx/default.d/roboshop.config
+    src: roboshop.conf
+    dest: /etc/nginx/default.d/roboshop.conf
 
 
 
