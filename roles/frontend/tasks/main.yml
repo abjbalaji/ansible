@@ -1,5 +1,5 @@
 
-#mvv localhost.conf /etc/nginx/default.d/roboshop.conf
+#mv localhost.conf /etc/nginx/default.d/roboshop.conf
 
 
 - name: Install Nginx
