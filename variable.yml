@@ -15,3 +15,14 @@
     - name: print the url
       ansible.builtin.debug:
         msg: URL is {{URL}}
+
+
+- name: Register variable
+  hosts: all
+  tasks:
+    - name: run a shell command
+      ansible.builtin.shell: uptime
+      register: OUT
+    - name: print output of shell command
+      ansible.builtin.debug:
+        msg: "{{OUT}}"
