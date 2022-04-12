@@ -1,6 +1,4 @@
 
-#mv localhost.conf /etc/nginx/default.d/roboshop.conf
-
 
 - name: Install Nginx
   ansible.builtin.yum:
