@@ -1,4 +1,4 @@
-- nmae: Set-Up Frontend Component
+- name: Set-Up Frontend Component
   hosts: FRONTEND
   roles:
     - frontend
