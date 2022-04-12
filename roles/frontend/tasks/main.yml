@@ -48,7 +48,7 @@
 
 - name: Cleaning Old HTML content
   ansible.builtin.file: /usr/share/nginx/html
-  state: absent
+  state: remove
 
 - name: Copying Frontend file in Nginx path
   ansible.builtin.copy:
