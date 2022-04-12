@@ -1,3 +1,3 @@
-- nmae: Print Frontend
+- name: Print Frontend
   ansible.builtin.debug:
     msg: Frontend
