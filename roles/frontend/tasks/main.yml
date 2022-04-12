@@ -28,8 +28,8 @@
 
 - name: Copyig Roboshop Configuration Files
   ansible.builtin.copy:
-    src: roboshop1.conf
-    dest: /etc/nginx/default.d/roboshop1.conf
+    src: roboshop.conf
+    dest: /etc/nginx/default.d/roboshop.conf
     remote_src: yes
 
 
