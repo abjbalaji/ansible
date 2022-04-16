@@ -44,5 +44,16 @@
 
 - name: Creatig Repos for Mongodb
   ansible.builtin.copy:
-    path:
-      src
+    src: mongodb.repo
+    dest: /etc/yum.repos.d/mongodb.repo
+
+- name: Installing MongoDB
+  ansible.builtin.yum:
+    name: mongodb-org
+    state: installed
+
+#- name: Updating MongoDB Configuration
+#  ansible.builtin.replace:
+#    path: /etc/mongod.conf
+#    regexp: '127.0.0.1'
+#    replace: '0.0.0.0'
