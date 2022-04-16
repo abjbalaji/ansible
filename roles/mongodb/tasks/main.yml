@@ -35,7 +35,7 @@
 - name: Starting MongoDB service
   ansible.builtin.systemd:
     name: mongod
-    state: statred
+    state: started
     enabled: yes
 
 - name: Download and Extract MongoDB Schema
