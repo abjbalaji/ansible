@@ -8,3 +8,15 @@
         - apple
         - banana
         - orange
+
+
+- name: Demo on Loops
+  hosts: localhost
+  tasks:
+    - name: print Fruit Name and count
+      debug:
+        msg: fruit Nmae is {{item.name}}, fruit count is {{item.count}}
+      loop:
+        -{name: apple,  count: 20}
+        -{name: banana, count: 35}
+        -{name: orange, count: 100}
