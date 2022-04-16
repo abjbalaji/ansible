@@ -52,10 +52,10 @@
     src: /tmp/catalogue-main/
     dest: /home/roboshop/catalogue/
     remote_src: yes
-  become_user: roboshop   #roboshop becoming an user that has permissions only runs this task( for copy the content)
+   #roboshop becoming an user that has permissions only runs this task( for copy the content)
 
 - name: Install NPM Dependencies
   community.general.npm:
     path: /home/roboshop/catalogue
-  become_user: roboshop
+  become_user: roboshop    # Here npm should run as normal user
 
