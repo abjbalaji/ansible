@@ -16,7 +16,7 @@
 #  roles:
 #    - catalogue
 
-- name: Roboshop Stup
+- name: Roboshop Setup
   become: yes
   hosts: '{{HOST}}'
   roles:
