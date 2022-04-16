@@ -59,3 +59,14 @@
     path: /home/roboshop/catalogue
   become_user: roboshop    # Here npm should run as normal user
 
+- name: Copy systemd file
+  ansible.builtin.copy:
+    src: systemd.service
+    dest: /etc/systemd/system/catalogue.service
+
+- name: Start Catalogue service
+  ansible.builtin.systemd:
+    name: catalogue
+    state: restarted
+    enabled: yes
+    daemon_reload: yes
