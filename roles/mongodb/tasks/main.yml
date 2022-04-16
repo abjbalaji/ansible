@@ -44,12 +44,12 @@
     dest: /tmp
     remote_src: yes
 
-- nmae: Loading Catalogue Schema
+- name: Loading Catalogue Schema
   community.mongodb.mongodb_shell:
     file: "/tmp/mongodb-main/catalogue.js"
     idempotent: yes
 
-- nmae: Loading users Schema
+- name: Loading users Schema
   community.mongodb.mongodb_shell:
     file: "/tmp/mongodb-main/users.js"
     idempotent: yes
