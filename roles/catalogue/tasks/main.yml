@@ -52,7 +52,7 @@
     src: /tmp/catalogue-main/
     dest: /home/roboshop/catalogue/
     remote_src: yes
-   #roboshop becoming an user that has permissions only runs this task( for copy the content)
+  become_user: roboshop   #roboshop becoming an user that has permissions only runs this task( for copy the content)
 
 - name: Install NPM Dependencies
   community.general.npm:
