@@ -9,3 +9,9 @@
   become: yes
   roles:
     - mongodb
+
+- name: Set-Up Catalogue Component
+  hosts: CATALOGUE
+  become: yes
+  roles:
+    - catalogue
