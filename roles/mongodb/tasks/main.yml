@@ -52,8 +52,8 @@
     name: mongodb-org
     state: installed
 
-#- name: Updating MongoDB Configuration
-#  ansible.builtin.replace:
-#    path: /etc/mongod.conf
-#    regexp: '127.0.0.1'
-#    replace: '0.0.0.0'
+- name: Updating MongoDB Configuration
+  ansible.builtin.replace:
+    path: /etc/mongod.conf
+    regexp: '127.0.0.1'
+    replace: '0.0.0.0'
