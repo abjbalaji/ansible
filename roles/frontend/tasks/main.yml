@@ -30,7 +30,7 @@
     dest: /etc/nginx/default.d/localost.conf
 
 - name: Starting Nginx Srvice
-  ansible.builtin.sysyemd:
+  ansible.builtin.systemd:
     name: nginx
     state: restarted
     enable: yes
