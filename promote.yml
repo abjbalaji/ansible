@@ -1,6 +1,6 @@
 -  name: Sample play
-   hosts: all
+   hosts: localhost
    tasks:
      -  name: Print Hello World
         ansible.builtin.debug:
-          msg: hellowwww {{ENV}}
+          msg: hellowwww ={{ENV}}
